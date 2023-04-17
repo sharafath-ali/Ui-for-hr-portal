@@ -1,0 +1,17 @@
+.text-left {
+  text-align: left;
+}
+.font-size-sm {
+  font-size: small;
+  color: gray;
+}
+.card-shadow {
+    border: transparent;
+  box-shadow: rgba(44, 107, 255, 0.1) 0px 20px 25px -5px,
+    rgba(116, 128, 255, 0.04) 0px 10px 10px -5px;
+}
+.emp-card{
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,47 @@
+.MainNavbar{
+    padding: 30px 50px;
+    display: flex;
+    justify-content:space-around;
+    background-color: transparent;
+}
+
+.NavLogo{
+    height: 4vw;
+}
+.AddButton
+{ 
+    align-items: center;
+    width: 7vw;
+    margin:0 1vw;
+    background-color: #245afe;
+    height: 6vh;
+    color: white;
+    font-weight: 500;
+}
+.AddButton:hover
+{ 
+    background-color: rgb(0, 0, 0);
+}
+.round-corner{
+    border-radius: 100px;
+    border: solid 1px rgb(224, 224, 224);
+}
+.search-container{
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.seach-bar{
+    border: transparent;
+    height: 46px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.seach-bar:focus{
+    outline: none;
+}
+.search-icon{
+    color: rgb(133, 133, 133);
+}
