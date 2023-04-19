@@ -9,7 +9,9 @@ import img from "../assets/hr-connect-logo.png";
 import "./MainNavbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import AddIcon from "@mui/icons-material/Add";
+import { useNavigate } from 'react-router-dom';
 function MainNavbar() {
+  const navigate = useNavigate();
   return (
     <Navbar className="MainNavbar" expand="lg">
       <Container className="NavContainer" fluid>
@@ -24,6 +26,8 @@ function MainNavbar() {
           <Button
             className="AddButton round-corner"
             variant="outline-secondary"
+            onClick={() => navigate('add')}
+            
           >
             <AddIcon /> Add
           </Button>

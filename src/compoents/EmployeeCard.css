@@ -14,4 +14,8 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+.designation-text{
+  color: grey;
+  font-size: small;
+  font-weight: 500;
+}

@@ -1,26 +1,22 @@
 import './App.css';
 import MainNavbar from './compoents/MainNavbar';
 import MainBanner from './compoents/MainBanner';
-import EmployeeCard from './compoents/EmployeeCard';
+import Cards from './compoents/cards';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EmployeeAdd from './compoents/EmployeeAdd';
+
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <MainNavbar/>
-      <MainBanner/>
-    <div className='container'>
-      <h1 className='mt-5 fw-bold'>Employees</h1>
-    <div className='row mb-5'>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      <EmployeeCard/>
-      </div>
-    </div>
       
+    
+      <Routes>
+      <Route path='/' element={<Cards/>} />
+       <Route path='/add' element={<EmployeeAdd/>} />
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
