@@ -8,6 +8,7 @@ import img1 from "../assets/hr-employee-img (1).png";
 import { useNavigate } from "react-router-dom";
 
 function EmployeeAdd() {
+  const navigate=useNavigate()
   return (
     <div className="parent-container">
       <Navbar className="MainNavbar" expand="lg">
@@ -80,7 +81,7 @@ function EmployeeAdd() {
                 />
               </div>
 
-              <button type="submit" class="btn btn-primary  my-4 aligh-right">
+              <button type="submit" class="btn btn-primary  my-4 aligh-right" onClick={()=>navigate('/Upload')}>
                 Submit
               </button>
             </form>

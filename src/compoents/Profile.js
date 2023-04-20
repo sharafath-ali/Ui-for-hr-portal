@@ -9,9 +9,13 @@ import profile1 from "../assets/profile1.jpg";
 import DeleteRoundedIcon from '@mui/icons-material/DeleteRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import FolderSharedRoundedIcon from '@mui/icons-material/FolderSharedRounded';
-import { IconButton } from '@mui/material';
+
+
 function Profile() {
   const navigate = useNavigate();
+  function Documentview(){
+    return navigate('/ViewDocuments')
+  }
   return (
     <div>
       <Navbar className="MainNavbar" expand="lg">
@@ -48,7 +52,7 @@ function Profile() {
                 <div className="d-flex justify-content-around mt-5">
                 <button className="button-icons color-pink"> <DeleteRoundedIcon className="icon"/> </button>
                 <button className="button-icons color-green"> <EditRoundedIcon className="icon"/> </button>
-                <button className="button-icons color-blue"> <FolderSharedRoundedIcon className="icon"/> </button>
+                <button className="button-icons color-blue" onClick={Documentview}> <FolderSharedRoundedIcon className="icon"/> </button>
                 </div>
                 </div>
               </div>
