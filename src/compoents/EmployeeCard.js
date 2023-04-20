@@ -3,9 +3,11 @@ import './EmployeeCard.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import profile1 from '../assets/profile1.jpg'
+import { useNavigate } from 'react-router-dom';
 function EmployeeCard() {
+  const navigate=useNavigate()
   return (
-   <div className='col-lg-3 col-md-4 col-sm-6 mt-5 col-xl-3'>
+   <div className='col-lg-3 col-md-4 col-sm-6 mt-5 col-xl-3' onClick={()=>navigate('/employeeprofile')}>
        <Card className='emp-card rounded-5 card-shadow' style={{ width: '100%' }}>
       <Card.Img className='rounded-5 p-2' variant="top" src={profile1} />
       <Card.Body>

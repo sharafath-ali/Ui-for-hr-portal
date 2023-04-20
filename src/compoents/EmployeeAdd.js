@@ -4,10 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./EmployeeAdd.css";
 import img from "../assets/hr-connect-logo.png";
-import AddIcon from "@mui/icons-material/Add";
-import { useNavigate } from "react-router-dom";
 import img1 from "../assets/hr-employee-img (1).png";
-import { red } from "@mui/material/colors";
+import { useNavigate } from "react-router-dom";
 
 function EmployeeAdd() {
   return (
@@ -31,7 +29,7 @@ function EmployeeAdd() {
           <div class="col-md-6 left-half">
             <img src={img1} alt="Image" class="img-fluid left-image" />
           </div>
-          <div class="col-md-6 right-half">
+          <div class="col-md-6 right-half ">
             <h1 className="form-head-text">New Employee</h1>
             <form>
 
